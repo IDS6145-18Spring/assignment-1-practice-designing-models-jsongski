@@ -53,8 +53,7 @@ def CreatePlants(veggies):
         veggies.append( bokchoy("Bok Choy {}".format(str(i)  ),1,1,1,0.14,0.12,0.31) )
 
 
-
-def Simulate():
+def simulate():
     L = []
     timestep = 0
     global thewater
@@ -82,7 +81,6 @@ def Simulate():
                     print("YOU KILLED YOUR PLANTS!!!!!")
                     return
             print("Container: Water Reserve {}, Nutrient Level {}".format(str(c.waterReserve),str(c.nutrientReserve)))
-
 
 
 #Remember this method gets executed first since its our 'main'
