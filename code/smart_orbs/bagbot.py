@@ -1,4 +1,5 @@
-from random import randint
+import random
+import numpy as np
 from bag import Bag
 from bagfacility import BagFacility
 from customer import Customer
@@ -13,10 +14,10 @@ def make_humans(count):
     '''Create some random shoppers'''
     customers = []
     for i in range(1, count):
-        shop_day = randint(0, 6)  # Assign customer a designated shopping day (0 = Sunday, 6 = Saturday)
-        bag_use = randint(1, 10)  # Number of bags customer uses per trip
-        motiv = randint(1, 10)  # Customer's level of motivation to participate in SmartORBS
-        conscient = randint(1, 10)  # Customer's conscientiousness
+        shop_day = random.randint(0, 6)  # Assign customer a designated shopping day (0 = Sunday, 6 = Saturday)
+        bag_use = random.randint(1, 10)  # Number of bags customer uses per trip
+        motiv = random.randint(1, 10)  # Customer's level of motivation to participate in SmartORBS
+        conscient = random.randint(1, 10)  # Customer's conscientiousness
         customers.append(Customer(i, shop_day, bag_use, motiv, conscient))
     return customers
 
@@ -58,9 +59,18 @@ def main():
     pub_eola = Store('Publix Lake Eola', 'E Central', 3)
     pub_dphil = Store('Publix Dr. Phillips', 'Dr. Phillips', 4)
 
+    publices = [pub_tpark, pub_cpark, pub_eola, pub_dphil]
+    for publix in publices:
+        publix.info()
+        publix.inventory()
 
-    deadbags = bag_hq.intake(returned_bags)
-    replace(deadbags)
+    # Distribute initial bag supply
+    deliver1 = np.random.choice(start_bags, 25, replace=False)
+    pub_tpark.receive(deliver1)
+    print(pub_tpark.inventory())
+
+#    deadbags = bag_hq.intake(returned_bags)
+#    replace(deadbags)
 
 if __name__ == '__main__':
     main()

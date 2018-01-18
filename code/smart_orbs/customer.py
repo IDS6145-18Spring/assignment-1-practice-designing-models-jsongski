@@ -6,13 +6,17 @@ class Customer:
 
     def __init__(self, id, shop_day, bag_use, motiv, conscient):
         '''Set customer attributes'''
-        self.id = id
-        self.shop_day = shop_day
-        self.bag_use = bag_use
+        self.id = id  # New customers are assigned an ID
+        self.shop_day = shop_day  # Customer's designated shopping day
+        self.bag_use = bag_use  # Number of bags the customer uses each trip
         self.motiv = motiv  # Customer's motivation to participate in program
         self.conscient = conscient  # Conscientiousness of customer
         self.bags = []  # Stash of bags customer currently possesses
         self.stolen = []  # Bags the customer has removed from circulation due to theft
+
+    def info(self):
+        '''Introduce customer'''
+        print(f'Customer {self.id} shops on Day {self.shop_day}, and uses {self.bag_use} bags each trip.')
 
     def shop(self, gimme):
         '''Take required number of clean bags for this shopping trip, and adds these to any bags the customer already
@@ -33,10 +37,6 @@ class Customer:
         lost = self.bags.pop(random.randrange(len(self.bags)))
         self.stolen.append(lost)
         return lost
-
-    def info(self):
-        '''Introduce customer'''
-        print(f'Customer {self.id} shops on Day {self.shop_day}, and uses {self.bag_use} bags each trip.')
 
 #    def steal(self, bags):
 #        '''The human will keep a bag for their own use and never return it'''

@@ -2,13 +2,16 @@ class Store:
     def __init__(self, name, location, traffic):
         self.name = name
         self.location = location
-        self.traffic = traffic
-        self.bags = []
+        self.traffic = traffic  # Customer volume
+        self.bags = []  # Bag inventory
 
-    def store_info(self):
+    def info(self):
         '''Statement about store'''
-        info = f'{self.name} is located at {self.location}.'
-        return info
+        print(f'{self.name} is located at {self.location}. It has a traffic rating of {self.traffic}.')
+
+    def inventory(self):
+        '''Current inventory of bags'''
+        print(f'{self.name} inventory: {len(self.bags)}')
 
     def receive(self, gimme):
         '''Receive shipment of clean bags and add it to existing clean bag inventory'''

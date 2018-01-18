@@ -6,6 +6,10 @@ class Kiosk:
         self.id = id
         self.bags = []
 
+    def inventory(self):
+        '''Current bag count'''
+        print(f'Kiosk {self.id} inventory: {len(self.bags)}')
+
     def collect(self, gimme):
         '''Receive used bags from customers'''
         self.bags = self.bags + gimme
