@@ -1,8 +1,7 @@
 # Assignment 1 - Practice Designing Models
-(remove: **text between brackets to be removed**)
 
 > * Participant name: Jihye Song
-> * Project Title: Orlando Smart Reusable Shopping Bag Program
+> * Project Title: Smart Orlando Reusable Bag System (SmartORBS)
 
 ## General Introduction
 
@@ -10,7 +9,7 @@ A **smart city** is an urban area that uses different types of electronic data c
 
 ![Image of Smart City](images/smartcity.png)
 
-Single-use plastic items (e.g., shopping bags, beverage containers) pose a threat to the environment. Plastic bags are not accepted by Orlando's recycling program and must be taken to a designated location that accepts plastic bags for recycling.
+Single-use plastic (e.g., shopping bags, beverage containers, straws) pose a threat to the environment and public health. Plastic bags are particularly problematic because they are not accepted by Orlando's recycling program and must be taken to a designated location that accepts plastic bags for recycling, which makes recycling difficult..
 Discarded plastic contributes to pollution and has threatened marine life.
 
 (remove: States your motivation clearly: why is it important / interesting to solve this problem?)
@@ -58,4 +57,4 @@ The success of this system relies on efficient management of supplies, as well a
 [**Code template**](code/README.md) - Starting coding framework for the (insert your exact problem here.)
 
 ## **P**ortable **O**rganic **T**rouble-free **S**elf-watering System (**POTS**) Model
-Here [**we provide an overview**](code/smart_bag_system/README.md) of the **P**ortable **O**rganic **T**rouble-free **S**elf-watering System (**POTS**) Model and provide a source code template.
+Here [**we provide an overview**](code/smart_orbs/README.md) of the **P**ortable **O**rganic **T**rouble-free **S**elf-watering System (**POTS**) Model and provide a source code template.

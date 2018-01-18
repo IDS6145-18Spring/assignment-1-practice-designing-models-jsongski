@@ -2,7 +2,7 @@ class Bag:
     '''This is a reusable shopping bag made out of biodegradable materials'''
 
     def __init__(self, id):
-        '''Intializes the bag'''
+        '''Initializes the bag'''
         self.id = id
         self.life = 1.0
         self.clean = True
