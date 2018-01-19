@@ -79,6 +79,8 @@ The links below depict the components of the system at different levels.
 
 ## Smart City SmartORBS Simulation
 
+[**Analysis overview**](analysis/README.md)
+
 The simulation will take initial values, such as a store's traffic, customer demand, and lifespan of an individual bag, and run over a period of time to represent the flow of bags through the system. Initially, customers are randomly assigned attributes like motivation and conscientiousness. Eventually, the simulation will take into account how realistic variations in human decision making and behavior alter their interaction with the system. For example, in an ideal world, the system would run smoothly only producing just as many bags as are composted. However, in real life, bags will likely be lost or stolen, so the simulation will have to account for loss and manage inventory accordingly.
 
 For the inventory management portion of the system, discrete-event based simulation will be used. Inputs include initial values for customers, stores, kiosks, and an initial quantity of bags. Outputs include bag inventory and whether the system adequately supplies bags given factors like damage, loss, and theft. The simulation described here (see [**SmartORBS simulation**](model/README.md)) will help determine whether an automated system can keep up with the demand of customers participating in a reusaable bag program. Specifically, the inventory management system will test Hypothesis 2, but as a major part of the overall system, it will also be critical when testing Hypothesis 1.
