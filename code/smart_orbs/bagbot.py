@@ -45,10 +45,10 @@ def replace(deadbags):
 
 
 def main():
-    humancount = input('Select number of customers to simulate: ') or 10
-    kioskcount = input('Select number of kiosks to simulate: ') or 1
-    bagcount = input('Select starting bag amount: ') or 100
-    dist = input('Select how many bags to distribute per store: ') or 25
+    humancount = int(input('Select number of customers to simulate: '))
+    kioskcount = int(input('Select number of kiosks to simulate: '))
+    bagcount = int(input('Select starting bag amount: '))
+    dist = int(input('Select how many bags to distribute per store: '))
 
     cust = make_humans(humancount)
     for human in cust:
