@@ -6,7 +6,7 @@ The automated system will detect how many bags are needed to meet customer deman
 
 Additionally, the system will track the location of each bag throughout its life cycle, clean bags before redistributing them, and detect when bags need to be removed from circulation due to wear and tear.
 
-The simulation will be run in [**BagBot**](code/smart_orbs/bagbot.py).
+The simulation will be run in [**BagBot**](../code/smart_orbs/bagbot.py).
 
 BagBot will take some initial information (e.g., a given number of customers, bags, stores, and kiosks) and simulate the exchange of bags as they interact with these components. First, the simulation can be adjusted to look at the outcome of varying customer populations, initial bag supplies, and buildings.
 
