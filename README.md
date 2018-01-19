@@ -32,7 +32,7 @@ The Smart Orlando Reusable Bag System shall:
   * Clean used bags to reduce threats to health due to bacteria
   * Detect amount of bags needed by each store and deliver required number of bags
   * Detect when bags are at the end of their life cycle and remove them from circulation by composting them
-* Only produce the amount of new bags to meet demand
+* Only produce the amount of new bags required to meet demand to reduce waste
 
 * The system will also include an automated delivery system to ensure bags are transported on time as needed 
   * Autonomous bag transporting vehicles will collect dirty bags to deliver to Bag HQ, and deliver clean bags to stores
@@ -86,4 +86,5 @@ For the inventory management portion of the system, discrete-event based simulat
 [**Code framework**](code/README.md) - The link provides information about the beginning stages of simulation development.
 
 ## **P**ortable **O**rganic **T**rouble-free **S**elf-watering System (**POTS**) Model
-Here [**we provide an overview**](code/smart_orbs/README.md) of the **P**ortable **O**rganic **T**rouble-free **S**elf-watering System (**POTS**) Model and provide a source code template.
+
+* [**POTS Model**](model/POTSmodel_part5/README.md) - for Part 5 of the assignment, the link includes object and class diagrams for POTS.
