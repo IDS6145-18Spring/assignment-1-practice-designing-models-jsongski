@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d4d09c6-bab8-4c37-aa93-efa6d4f238f1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/code/smart_orbs/bagbot.py" afterPath="$PROJECT_DIR$/code/smart_orbs/bagbot.py" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,12 +20,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="399">
-                <caret line="21" column="1381" lean-forward="false" selection-start-line="21" selection-start-column="1381" selection-end-line="21" selection-end-column="1381" />
+                <caret line="21" column="1290" lean-forward="false" selection-start-line="21" selection-start-column="1290" selection-end-line="21" selection-end-column="1290" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -128,7 +128,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bagbot.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bagbot.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/smart_orbs/bagbot.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1444">
@@ -182,10 +182,10 @@
         <option value="$PROJECT_DIR$/model/behavior_diagram.md" />
         <option value="$PROJECT_DIR$/analysis/README.md" />
         <option value="$PROJECT_DIR$/code/smart_orbs/README.md" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/model/agent_usecase_diagram.md" />
         <option value="$PROJECT_DIR$/code/README.md" />
         <option value="$PROJECT_DIR$/code/smart_orbs/bagbot.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -899,23 +899,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="399">
-            <caret line="21" column="1381" lean-forward="false" selection-start-line="21" selection-start-column="1381" selection-end-line="21" selection-end-column="1381" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/smartorbs_classdiagram.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -989,6 +972,23 @@
         <state relative-caret-position="1444">
           <caret line="82" column="44" lean-forward="true" selection-start-line="82" selection-start-column="44" selection-end-line="82" selection-end-column="44" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="399">
+            <caret line="21" column="1290" lean-forward="false" selection-start-line="21" selection-start-column="1290" selection-end-line="21" selection-end-column="1290" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
