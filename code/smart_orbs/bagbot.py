@@ -13,7 +13,7 @@ bag_hq = BagFacility()
 def make_humans(count):
     '''Create some random shoppers'''
     customers = []
-    for i in range(1, count):
+    for i in range(1, count + 1):
         shop_day = random.randint(0, 6)  # Assign customer a designated shopping day (0 = Sunday, 6 = Saturday)
         bag_use = random.randint(1, 10)  # Number of bags customer uses per trip
         motiv = random.randint(1, 10)  # Customer's level of motivation to participate in SmartORBS
@@ -25,7 +25,7 @@ def make_humans(count):
 def build_kiosks(count):
     '''Set up some bag return kiosks'''
     kiosks = []
-    for i in range(1, count):
+    for i in range(1, count + 1):
         kiosks.append(Kiosk(i))
     return kiosks
 
@@ -33,7 +33,7 @@ def build_kiosks(count):
 def first_bags(count):
     '''Produce initial bag batch'''
     clean_bags = []
-    for i in range(1, count):
+    for i in range(1, count + 1):
         clean_bags.append(Bag(i))
     return clean_bags
 
@@ -45,15 +45,22 @@ def replace(deadbags):
 
 
 def main():
-    cust = make_humans(10)
+    humancount = input('Select number of customers to simulate: ') or 10
+    kioskcount = input('Select number of kiosks to simulate: ') or 1
+    bagcount = input('Select starting bag amount: ') or 100
+    dist = input('Select how many bags to distribute per store: ') or 25
+
+    cust = make_humans(humancount)
     for human in cust:
         human.info()
 
-    kiosks = build_kiosks(1)
+    kiosks = build_kiosks(kioskcount)
 
-    start_bags = first_bags(100)
+    start_bags = first_bags(bagcount)
+    for bag in start_bags:
+        bag.info()
 
-    #  Set up existing Publices
+    # Set up existing Publices
     pub_tpark = Store('Publix Town Park', 'E. Colonial', 2)
     pub_cpark = Store('Publix College Park', 'Edgewater', 1)
     pub_eola = Store('Publix Lake Eola', 'E Central', 3)
@@ -64,10 +71,14 @@ def main():
         publix.info()
         publix.inventory()
 
+    print(f'\nSmartORBS distributed {dist} bags to each store.\n')
+
     # Distribute initial bag supply
-    deliver1 = np.random.choice(start_bags, 25, replace=False)
-    pub_tpark.receive(deliver1)
-    print(pub_tpark.inventory())
+    for publix in publices:
+        deliver = random.sample(start_bags, dist)
+        publix.receive(deliver)
+        print(publix.inventory())
+
 
 #    deadbags = bag_hq.intake(returned_bags)
 #    replace(deadbags)

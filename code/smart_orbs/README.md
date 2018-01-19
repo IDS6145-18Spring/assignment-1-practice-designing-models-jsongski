@@ -1,4 +1,4 @@
-## **P**ortable **O**rganic **T**rouble-free **S**elf-watering System (**POTS**) Model
+## Smart Orlando Reusable Bag System (SmartORBS)
 
 (Remove: decribe the model here, use whatever diagram you need object, class, etc)
 
@@ -11,5 +11,5 @@ a real system)
 
 
 Example linked diagram to help you.
-![POTS system](../../images/class_example_diagram.png)
+![POTS system](../../images/POTSobjectdiagram.png)
 more decription

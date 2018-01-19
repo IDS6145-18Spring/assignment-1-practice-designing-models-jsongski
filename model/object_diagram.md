@@ -1,22 +1,19 @@
-## Smart City (My Problem) Model - Object Diagram
-
-(remove: provide a description of the current model you describe below)
-The primary objects in this model are:
-* Store
-  * Publix Town Park
-  * Publix College Park
-  * Publix Lake Eola
-  * Publix Dr. Phillips
-* Bag Facility
-* Bag
+## Smart Orlando Reusable Bag System (SmartORBS) Model - Object Diagram
 
 
-(remove: use images!!!)
-(remove: I added an example image to illustrate [**how to use Markdown**](https://guides.github.com/features/mastering-markdown/), maybe consider a tool like [**Haroodpad**](http://pad.haroopress.com/user.html) )
+The automated bag management system, or Smart Orlando Reusable Bag System (SmartORBS) comprises several main components:
+* Vehicles
+  * Specifically, the system will use autonomous bag transporters
+* SmartORBS Mobile App
+* Humans
+  * Customers who participate in the SmartORBS program are the main focus
+* Bags
+* Stationary structures
+  * Bag HQ
+  * Store
+  * Kiosk
 
-![Example Object Diagram](../images/class_example_diagram.png)
 
-(remove: More decription)
-(remove: Maybe a second or third diagram to highlight a point or aspect)
+![Object Diagram](../images/smartorbs_objectdiagram.png)
 
-(remove: each diagram markdown file should roughly follow this template)
+The entire system will involve an automated delivery system, a cleaning and composting system, an inventory tracking system, and a mobile app designed to motivate customers to participate in the program.

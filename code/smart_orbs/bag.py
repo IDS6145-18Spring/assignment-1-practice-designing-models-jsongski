@@ -7,6 +7,14 @@ class Bag:
         self.life = 1.0  # Refers to the condition of the bag (1.0 = new, 0.0 = completely destroyed)
         self.clean = True  # Bags are either clean or dirty
 
+    def info(self):
+        '''Bag stats'''
+        if self.clean == True:
+            cleanstate = 'clean'
+        else:
+            cleanstate = 'dirty'
+        print(f'I am Bag {self.id}. I am {cleanstate}. My life is at {self.life} out of 1.0.')
+
     def explode(self):
         '''Occasionally a bag might explode'''
         self.life = 0
