@@ -22,7 +22,7 @@ Each of the classes detailed below can be found in its own Python file with the 
 * [**bagfacility**](smart_orbs/bagfacility.py) - headquarters for bag production, sorting, cleaning, composting, and distribution
 * [**customer**](smart_orbs/customer.py) - human agent who interacts with the system by using bags and making decisions based on various internal and external factors
 * [**kiosk**](smart_orbs/kiosk.py) - receptacle for returned bags that will be conveniently located to make it easier to return bags
-* [**store**](smart_orbs.store.py) - grocery store that dispenses clean bags
+* [**store**](smart_orbs/store.py) - grocery store that dispenses clean bags
  
 Additional functions and attributes can be added to improve the simulation after initial testing.
 
