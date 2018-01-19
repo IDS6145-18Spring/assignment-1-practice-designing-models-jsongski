@@ -1,4 +1,4 @@
-## Smart Orlando Reusable Bag System (*SmartORBS*) Model
+## Smart Orlando Reusable Bag System (*SmartORBS*) Code
 
 While the problem at hand is complex and multifaceted, the current project focuses on one part of it, an automated system that manages reusable bag supplies across participating stores. The system comprises a central bag management facility (Bag HQ), bags, stores, return kiosks, and customers.
 
@@ -17,7 +17,13 @@ Currently, the main function in BagBot sets up the initial scenario to simulate.
 
 After setting up the environment, the next step will be to have the system run through cycles of discrete time periods and to move the bags through the system, from bag HQ to store to customer to kiosk and back again. To add complexity, a delivery system can be added later to account for transportation of bags. Additionally, human attributes can be simulated more realistically to provide a more accurate depiction of customer behavior.
 
+Each of the classes detailed below can be found in its own Python file with the beginning framework for each class:
+* [**bag**](smart_orbs/bag.py) - biodegradable bags with a finite lifespan that need to be cleaned after use
+* [**bagfacility**](smart_orbs/bagfacility.py) - headquarters for bag production, sorting, cleaning, composting, and distribution
+* [**customer**](smart_orbs/customer.py) - human agent who interacts with the system by using bags and making decisions based on various internal and external factors
+* [**kiosk**](smart_orbs/kiosk.py) - receptacle for returned bags that will be conveniently located to make it easier to return bags
+* [**store**](smart_orbs.store) - grocery store that dispenses clean bags
+ 
+Additional functions and attributes can be added to improve the simulation after initial testing.
 
 ![SmartORBS](../images/smartorbs_classdiagram.png)
-
-Each of the classes detailed above can be found in its own Python file. Additional functions and attributes can be added to improve the simulation after initial testing.
